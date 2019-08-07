@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>智能物资管理系统</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body class="ui-theme-one"  id="theme">
+  <button style="z-index: 9999;background: blueviolet;position: absolute;top: 3vh;right: 3vw;width: 4vw;border-radius: 5px;outline: none" onclick="button()">换肤</button>
+  <rbi-root></rbi-root>
+</body>
+<script type="application/javascript">
+  var flag = false;
+   function button() {
+     var div = document.getElementById('theme');
+     if (flag) {
+       div.className = 'ui-theme-one';
+       flag = false;
+     } else {
+       div.className = 'ui-theme-two';
+       flag = true;
+     }
+
+   }
+</script>
+</html>
